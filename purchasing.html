@@ -915,104 +915,619 @@
                     <!-- PAGE-HEADER -->
                     <div class="page-header">
                         <div>
-                            <h1 class="page-title">Customers</h1>
+                            <h1 class="page-title">Purchasing</h1>
                         </div>
                         <div class="ms-auto pageheader-btn">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Customers</li>
+                                <li class="breadcrumb-item">Home</li>
+                                <li class="breadcrumb-item">Purchasing</li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    <a href="javascript:void(0);">Purchasing</a>
+                                </li>
                             </ol>
                         </div>
                     </div>
                     <!-- PAGE-HEADER END -->
                     <div class="row row-sm">
-                        <div class="col-md-12 mb-3">
-                            <div class="btn-list">
-                                <a href="task-create.html" class="btn btn-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-inner-icn text-white" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M16,11.5h-3.5V8c0-0.276123-0.223877-0.5-0.5-0.5S11.5,7.723877,11.5,8v3.5H8c-0.276123,0-0.5,0.223877-0.5,0.5s0.223877,0.5,0.5,0.5h3.5v3.5005493C11.5001831,16.2765503,11.723999,16.5001831,12,16.5h0.0006104C12.2765503,16.4998169,12.5001831,16.276001,12.5,16v-3.5H16c0.276123,0,0.5-0.223877,0.5-0.5S16.276123,11.5,16,11.5z M12,2C6.4771729,2,2,6.4771729,2,12s4.4771729,10,10,10c5.5202026-0.0062866,9.9937134-4.4797974,10-10C22,6.4771729,17.5228271,2,12,2z M12,21c-4.9705811,0-9-4.0294189-9-9s4.0294189-9,9-9c4.9682617,0.0056152,8.9943848,4.0317383,9,9C21,16.9705811,16.9705811,21,12,21z"/></svg>
-                                    Add New Customer
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ADD NEW END -->
-                    <div class="row row-sm">
-                        <div class="col-lg-12">
+                        <div class="col-sm-12 col-md-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered table-striped text-nowrap border-bottom w-100" id="responsive-datatable">
-                                            <thead>
-                                            <tr>
-                                                <th class="wd-5p border-bottom-0">Sl.</th>
-                                                <th class="wd-10p border-bottom-0">Name</th>
-                                                <th class="wd-10p border-bottom-0">Address</th>
-                                                <th class="wd-5p border-bottom-0">Gender</th>
-                                                <th class="wd-10p border-bottom-0">Mobile</th>
-                                                <th class="wd-10p border-bottom-0">Email</th>
-                                                <th class="wd-10p border-bottom-0">Status</th>
-                                                <th class="wd-10p border-bottom-0">Action</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Kevin Powell</td>
-                                                <td>Dhaka, Mirpur-6</td>
-                                                <td>Male</td>
-                                                <td>017XXXXXXXX</td>
-                                                <td>example@gmail.com</td>
-                                                <td>
-                                                    <span class="badge rounded-pill bg-primary-gradient">active</span>
-                                                </td>
-                                                <td>
-                                                    <div class="d-flex align-items-stretch">
-                                                        <a class="btn btn-sm btn-success-gradient border me-2" data-bs-toggle="tooltip" data-bs-original-title="Change Status">
-                                                            <svg  xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="20" width="16" viewBox="0 0 24 24"><path d="M15.8085327,8.6464844l-5.6464233,5.6464844l-2.4707031-2.4697266c-0.0023804-0.0023804-0.0047607-0.0047607-0.0072021-0.0071411c-0.1972046-0.1932373-0.5137329-0.1900635-0.7069702,0.0071411c-0.1932983,0.1972656-0.1900635,0.5137939,0.0071411,0.7070312l2.8242188,2.8232422C9.9022217,15.4474487,10.02948,15.5001831,10.1621094,15.5c0.1326294,0.0001221,0.2598267-0.0525513,0.3534546-0.1464844l6-6c0.0023804-0.0023804,0.0047607-0.0046997,0.0071411-0.0071411c0.1932373-0.1972046,0.1900635-0.5137329-0.0071411-0.7069702C16.3183594,8.446106,16.0018311,8.4493408,15.8085327,8.6464844z M12,2C6.4771729,2,2,6.4771729,2,12s4.4771729,10,10,10c5.5201416-0.0064697,9.9935303-4.4798584,10-10C22,6.4771729,17.5228271,2,12,2z M12,21c-4.9705811,0-9-4.0294189-9-9s4.0294189-9,9-9c4.9683228,0.0054321,8.9945679,4.0316772,9,9C21,16.9705811,16.9705811,21,12,21z"/></svg>
-                                                        </a>
-                                                        <a class="btn btn-sm btn-secondary-gradient border me-2" data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none" /><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z" /></svg>
-                                                        </a>
-                                                        <a href="#" class="border br-5 px-2 py-1 d-flex align-items-center" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fe fe-more-vertical"></i></a>
-                                                        <div class="dropdown-menu dropdown-menu-start">
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-edit-2 me-2"></i> Edit</a>
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-info me-2"></i> Info</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Natasa tian</td>
-                                                <td>Kawran Bazar</td>
-                                                <td>Female</td>
-                                                <td>017XXXXXXXX</td>
-                                                <td>example2@gmail.com</td>
-                                                <td><span class="badge rounded-pill bg-warning-gradient">deactive</span></td>
-                                                <td>
-                                                    <div class="d-flex align-items-stretch">
-                                                        <a class="btn btn-sm btn-success-gradient border me-2" data-bs-toggle="tooltip" data-bs-original-title="Change Status">
-                                                            <svg  xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="20" width="16" viewBox="0 0 24 24"><path d="M15.8085327,8.6464844l-5.6464233,5.6464844l-2.4707031-2.4697266c-0.0023804-0.0023804-0.0047607-0.0047607-0.0072021-0.0071411c-0.1972046-0.1932373-0.5137329-0.1900635-0.7069702,0.0071411c-0.1932983,0.1972656-0.1900635,0.5137939,0.0071411,0.7070312l2.8242188,2.8232422C9.9022217,15.4474487,10.02948,15.5001831,10.1621094,15.5c0.1326294,0.0001221,0.2598267-0.0525513,0.3534546-0.1464844l6-6c0.0023804-0.0023804,0.0047607-0.0046997,0.0071411-0.0071411c0.1932373-0.1972046,0.1900635-0.5137329-0.0071411-0.7069702C16.3183594,8.446106,16.0018311,8.4493408,15.8085327,8.6464844z M12,2C6.4771729,2,2,6.4771729,2,12s4.4771729,10,10,10c5.5201416-0.0064697,9.9935303-4.4798584,10-10C22,6.4771729,17.5228271,2,12,2z M12,21c-4.9705811,0-9-4.0294189-9-9s4.0294189-9,9-9c4.9683228,0.0054321,8.9945679,4.0316772,9,9C21,16.9705811,16.9705811,21,12,21z"/></svg>
-                                                        </a>
-                                                        <a class="btn btn-sm btn-secondary-gradient border me-2" data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="16"><path d="M0 0h24v24H0V0z" fill="none" /><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z" /></svg>
-                                                        </a>
-                                                        <a href="#" class="border br-5 px-2 py-1 d-flex align-items-center" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fe fe-more-vertical"></i></a>
-                                                        <div class="dropdown-menu dropdown-menu-start">
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-edit-2 me-2"></i> Edit</a>
-                                                            <a class="dropdown-item" href="#"><i class="fe fe-info me-2"></i> Info</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="tabs-menu4">
+                                        <!-- Tabs -->
+                                        <nav class="nav d-sm-flex d-block">
+                                            <a class="nav-link border border-bottom-0 br-sm-5 me-2 active" data-bs-toggle="tab" href="#tab25">
+                                                Summary
+                                            </a>
+                                            <a class="nav-link border border-bottom-0 br-sm-5 me-2" data-bs-toggle="tab" href="#tab26">
+                                                My list
+                                            </a>
+                                            <a class="nav-link border border-bottom-0 br-sm-5 me-2" data-bs-toggle="tab" href="#tab27">
+                                                Saved
+                                            </a>
+                                            <a class="nav-link border border-bottom-0 br-sm-5 me-2" data-bs-toggle="tab" href="#tab28">
+                                                Completed
+                                            </a>
+                                        </nav>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- ORDERS LIST END -->
+                    <!-- FILTER END -->
+                    <div class="row row-sm">
+                        <div class="col-md-12">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab25">
+                                    <!--Chart-->
+                                </div>
+                                <div class="tab-pane" id="tab26">
+                                    <div class="row row-sm">
+                                        <div class="col-lg-12">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-md-12 col-xl-3">
+                                                            <div class="form-group">
+                                                                <label class="form-label" for="first-search">Search By Customer Phone</label>
+                                                                <form action="#" method="POST">
+                                                                    <div class="input-group">
+                                                                        <!--@csrf-->
+                                                                        <input class="form-control" id="first-search" placeholder="Customer Phone Number" type="text">
+                                                                        <button class="btn btn-primary text-white" type="button"><i class="fa fa-search"></i></button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-xl-3">
+                                                            <div class="form-group">
+                                                                <label class="form-label">Select Order Status</label>
+                                                                <select class="form-control select2 form-select" data-placeholder="Select Order Status">
+                                                                    <option label="Select Order Status"></option>
+                                                                    <option value="1">Active</option>
+                                                                    <option value="2">Deactive</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-xl-3">
+                                                            <div class="form-group">
+                                                                <label class="form-label" for="last-search">Search By Order ID</label>
+                                                                <form action="#" method="POST">
+                                                                    <div class="input-group">
+                                                                        <!--@csrf-->
+                                                                        <input class="form-control" id="last-search" placeholder="Order ID" type="text">
+                                                                        <button class="btn btn-primary text-white" type="button"><i class="fa fa-search"></i></button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-xl-3">
+                                                            <div class="form-group">
+                                                                <label class="form-label" for="last-search">Date Range</label>
+                                                                <div class="input-group">
+                                                                    <div class="input-group-text bg-primary-transparent text-primary">
+                                                                        <i class="fe fe-calendar text-20"></i>
+                                                                    </div>
+                                                                    <input class="form-control" id="datepicker-month" placeholder="Start-End" type="text">
+                                                                </div><!-- input-group -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ROW END -->
+                                    <div class="row text-center">
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h5 class="mb-2 fw-semibold">65</h5>
+                                                            <p class="ht-xl-60">Total Order</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 40</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 15,391</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h5 class="mb-2 fw-semibold">9</h5>
+                                                            <p class="ht-xl-60">Partialty Paid</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 6</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 1,531</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6 class="mb-2 fw-semibold">48</h6>
+                                                            <p class="ht-xl-60">Paid To Supplier</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 26</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 9,858</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6 class="mb-2 fw-semibold">3</h6>
+                                                            <p class="ht-xl-60">Purchasing</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 3</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 1,019</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6 class="mb-2 fw-semibold">4</h6>
+                                                            <p class="ht-xl-60">Need Repurchase</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 4</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 2,838</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6 class="mb-2 fw-semibold">1</h6>
+                                                            <p class="ht-xl-60">Waiting for Seller Response</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 1</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 145</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ROW-1 END-->
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table id="responsive-datatable-mod-two" class="table table-bordered table-striped text-nowrap border-bottom w-100">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="wd-5p border-bottom-0">Sl.</th>
+                                                        <th class="wd-10p border-bottom-0">Name</th>
+                                                        <th class="wd-10p border-bottom-0">Phone</th>
+                                                        <th class="wd-10p border-bottom-0">CRM Manager</th>
+                                                        <th class="wd-10p border-bottom-0">Min</th>
+                                                        <th class="wd-20p border-bottom-0">Orders</th>
+                                                        <th class="wd-10p border-bottom-0">Purchasing Cost</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="text-center">
+                                                        <td>1</td>
+                                                        <td>Saqeef Rayhan <span class="badge badge-sm bg-primary-gradient">Regular</span></td>
+                                                        <td><a href="#">0198****616</a></td>
+                                                        <td>Ashif Khan</td>
+                                                        <td>12 Days</td>
+                                                        <td>
+                                                            <span class="badge bg-info-gradient py-1">
+                                                                <span class="badge badge-sm rounded-pill bg-white"><i class="fa fa-cny"></i> 124</span>
+                                                                    WRCK65
+                                                                <span class="badge badge-sm rounded-pill bg-white">Md. Salauddin</span>
+                                                                <i class="fa fa-hourglass-2"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="fa fa-cny"></i> 124</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent">&#2547; 2,004</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>2</td>
+                                                        <td>Abu Sarker <span class="badge badge-sm bg-primary-gradient">Regular</span></td>
+                                                        <td><a href="#">0181****323</a></td>
+                                                        <td>
+                                                            <h6>Mostary Afrin</h6>
+                                                            <span class="border border-1 border-warning px-1 fw-bold rounded-1 fs-10 text-warning bg-warning-transparent">Note</span>
+                                                        </td>
+                                                        <td>14 Days</td>
+                                                        <td>
+                                                            <span class="badge bg-warning-gradient py-1">
+                                                                <span class="badge badge-sm rounded-pill bg-white"><i class="fa fa-cny"></i> 148</span>
+                                                                    WRCKLY
+                                                                <span class="badge badge-sm rounded-pill bg-white">Md. Salauddin</span>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="fa fa-cny"></i> 148</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent">&#2547; 2,984</span>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab27">
+                                    <div class="row text-center">
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h5 class="mb-2 fw-semibold">65</h5>
+                                                            <p class="ht-xl-60">Total Order</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 40</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 15,391</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h5 class="mb-2 fw-semibold">9</h5>
+                                                            <p class="ht-xl-60">Partialty Paid</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 6</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 1,531</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6 class="mb-2 fw-semibold">48</h6>
+                                                            <p class="ht-xl-60">Paid To Supplier</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 26</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 9,858</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6 class="mb-2 fw-semibold">3</h6>
+                                                            <p class="ht-xl-60">Purchasing</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 3</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 1,019</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6 class="mb-2 fw-semibold">4</h6>
+                                                            <p class="ht-xl-60">Need Repurchase</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 4</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 2,838</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6 class="mb-2 fw-semibold">1</h6>
+                                                            <p class="ht-xl-60">Waiting for Seller Response</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 1</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 145</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ROW-1 END-->
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-striped text-nowrap border-bottom w-100" id="responsive-datatable-two">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="wd-10p border-bottom-0">Date</th>
+                                                        <th class="wd-10p border-bottom-0">Order ID</th>
+                                                        <th class="wd-10p border-bottom-0">Payment Method</th>
+                                                        <th class="wd-10p border-bottom-0">Name</th>
+                                                        <th class="wd-10p border-bottom-0">Phone</th>
+                                                        <th class="wd-10p border-bottom-0">status</th>
+                                                        <th class="wd-10p border-bottom-0">Source</th>
+                                                        <th class="wd-10p border-bottom-0">Price</th>
+                                                        <th class="wd-10p border-bottom-0">Shipping</th>
+                                                        <th class="wd-10p border-bottom-0">Manager</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="text-center">
+                                                        <td>09 Mar, 2023</td>
+                                                        <td><a href="#">#WRCKK3</a></td>
+                                                        <td>
+                                                            <span class="badge py-1 badge-sm bg-secondary-gradient"><i class="fa fa-info"></i> Bkash</span><br/>
+                                                            <span class="badge py-1 badge-sm bg-dark"><i class="fa fa-info fa-2xs"></i> Balance</span>
+                                                        </td>
+                                                        <td><a href="#">Mahmud Adnan</a></td>
+                                                        <td>01755596445</td>
+                                                        <td>
+                                                            <span class="badge badge-sm bg-dark">Purchasing</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-sm bg-cyan">1588</span>
+                                                        </td>
+                                                        <td>&#2547; 15,599</td>
+                                                        <td>
+                                                            <span class="badge badge-sm bg-light">Air</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-group mb-0">
+                                                                <ul>
+                                                                    <li class="select-status">
+                                                                        <select class="form-control form-select" data-placeholder="Select Code">
+                                                                            <option value="16681">16681</option>
+                                                                            <option value="16682" selected>16682</option>
+                                                                            <option value="16683">16683</option>
+                                                                        </select>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab28">
+                                    <div class="row text-center">
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h5 class="mb-2 fw-semibold">65</h5>
+                                                            <p class="ht-xl-60">Total Order</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 40</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 15,391</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h5 class="mb-2 fw-semibold">9</h5>
+                                                            <p class="ht-xl-60">Partialty Paid</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 6</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 1,531</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6 class="mb-2 fw-semibold">48</h6>
+                                                            <p class="ht-xl-60">Paid To Supplier</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 26</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 9,858</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6 class="mb-2 fw-semibold">3</h6>
+                                                            <p class="ht-xl-60">Purchasing</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 3</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 1,019</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6 class="mb-2 fw-semibold">4</h6>
+                                                            <p class="ht-xl-60">Need Repurchase</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 4</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 2,838</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
+                                            <div class="card overflow-hidden">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6 class="mb-2 fw-semibold">1</h6>
+                                                            <p class="ht-xl-60">Waiting for Seller Response</p>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-secondary bg-secondary-transparent"><i class="mdi mdi-account-multiple"></i> 1</span>
+                                                            <span class="border border-1 border-secondary px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent"><i class="fa fa-cny"></i> 145</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ROW-1 END-->
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-striped text-nowrap border-bottom w-100" id="responsive-datatable">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="wd-10p border-bottom-0">Date</th>
+                                                        <th class="wd-10p border-bottom-0">Order ID</th>
+                                                        <th class="wd-10p border-bottom-0">Payment Method</th>
+                                                        <th class="wd-10p border-bottom-0">Name</th>
+                                                        <th class="wd-10p border-bottom-0">Phone</th>
+                                                        <th class="wd-10p border-bottom-0">status</th>
+                                                        <th class="wd-10p border-bottom-0">Source</th>
+                                                        <th class="wd-10p border-bottom-0">Price</th>
+                                                        <th class="wd-10p border-bottom-0">Shipping</th>
+<!--                                                        <th class="wd-10p border-bottom-0">Manager</th>-->
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="text-center">
+                                                        <td>18 Aug, 2021</td>
+                                                        <td><a href="#">#1129465</a></td>
+                                                        <td>
+                                                            <span class="badge py-1 badge-sm bg-dark"><i class="fa fa-info-circle"></i> Bank</span><br/>
+                                                            <span class="badge py-1 badge-sm bg-indigo"><i class="fa fa-info-circle"></i> SSLCommmerz</span>
+                                                        </td>
+                                                        <td><a href="#">Farhat Lamia Rista</a></td>
+                                                        <td>01680425871</td>
+                                                        <td>
+                                                            <span class="badge badge-sm bg-lime">Completed</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-sm bg-cyan">1588</span>
+                                                        </td>
+                                                        <td>&#2547; 15,599</td>
+                                                        <td>
+                                                            <span class="badge badge-sm bg-light">Air</span>
+                                                        </td>
+<!--                                                        <td>
+                                                            <div class="form-group mb-0">
+                                                                <ul>
+                                                                    <li class="select-status">
+                                                                        <select class="form-control form-select" data-placeholder="Select Code">
+                                                                            <option value="16681">16681</option>
+                                                                            <option value="16682" selected>16682</option>
+                                                                            <option value="16683">16683</option>
+                                                                        </select>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>-->
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>18 Aug, 2021</td>
+                                                        <td><a href="#">#1129465</a></td>
+                                                        <td>
+                                                            <span class="badge py-1 badge-sm bg-dark"><i class="fa fa-info-circle"></i> Courier</span><br/>
+                                                            <span class="badge py-1 badge-sm bg-secondary-gradient"><i class="fa fa-info-circle"></i> Bkash</span>
+                                                        </td>
+                                                        <td><a href="#">Farhat Lamia Rista</a></td>
+                                                        <td>01680425871</td>
+                                                        <td>
+                                                            <span class="badge badge-sm bg-lime">Completed</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-sm bg-cyan">1588</span>
+                                                        </td>
+                                                        <td>&#2547; 15,599</td>
+                                                        <td>
+                                                            <span class="badge badge-sm bg-light">Air</span>
+                                                        </td>
+                                                        <!--                                                        <td>
+                                                                                                                    <div class="form-group mb-0">
+                                                                                                                        <ul>
+                                                                                                                            <li class="select-status">
+                                                                                                                                <select class="form-control form-select" data-placeholder="Select Code">
+                                                                                                                                    <option value="16681">16681</option>
+                                                                                                                                    <option value="16682" selected>16682</option>
+                                                                                                                                    <option value="16683">16683</option>
+                                                                                                                                </select>
+                                                                                                                            </li>
+                                                                                                                        </ul>
+                                                                                                                    </div>
+                                                                                                                </td>-->
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>18 Aug, 2021</td>
+                                                        <td><a href="#">#1129465</a></td>
+                                                        <td>
+                                                            <span class="badge py-1 badge-sm bg-dark"><i class="fa fa-info-circle"></i> Cash</span><br/>
+                                                            <span class="badge py-1 badge-sm bg-secondary-gradient"><i class="fa fa-info-circle"></i> Bkash</span>
+                                                        </td>
+                                                        <td><a href="#">Farhat Lamia Rista</a></td>
+                                                        <td>01680425871</td>
+                                                        <td>
+                                                            <span class="badge badge-sm bg-lime">Completed</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-sm bg-cyan">1588</span>
+                                                        </td>
+                                                        <td>&#2547; 15,599</td>
+                                                        <td>
+                                                            <span class="badge badge-sm bg-light">Air</span>
+                                                        </td>
+                                                        <!--                                                        <td>
+                                                                                                                    <div class="form-group mb-0">
+                                                                                                                        <ul>
+                                                                                                                            <li class="select-status">
+                                                                                                                                <select class="form-control form-select" data-placeholder="Select Code">
+                                                                                                                                    <option value="16681">16681</option>
+                                                                                                                                    <option value="16682" selected>16682</option>
+                                                                                                                                    <option value="16683">16683</option>
+                                                                                                                                </select>
+                                                                                                                            </li>
+                                                                                                                        </ul>
+                                                                                                                    </div>
+                                                                                                                </td>-->
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ROW END -->
                 </div>
             </div>
         </div>
@@ -1516,6 +2031,12 @@
 <script src="assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
 <script src="assets/plugins/datatable/dataTables.responsive.min.js"></script>
 <script src="assets/js/table-data.js"></script>
+<!-- Bootstrap-Date Range Picker js-->
+<script src="assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+<!-- bootstrap-datepicker js (Date picker Style-01) -->
+<script src="assets/plugins/bootstrap-datepicker/js/datepicker.js"></script>
+<!-- FORM ELEMENTS JS -->
+<script src="assets/js/formelementadvnced.js"></script>
 <!-- INDEX JS -->
 <script src="assets/js/index1.js"></script>
 <script src="assets/js/index.js"></script>
@@ -1532,6 +2053,5 @@
 
 <!-- SWITCHER JS -->
 <script src="assets/switcher/js/switcher.js"></script>
-
 </body>
 </html>

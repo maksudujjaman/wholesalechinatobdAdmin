@@ -915,115 +915,57 @@
           <!-- PAGE-HEADER -->
           <div class="page-header">
             <div>
-              <h1 class="page-title">Refund</h1>
+              <h1 class="page-title">My CRM Tickets</h1>
             </div>
             <div class="ms-auto pageheader-btn">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="javascript:void(0);">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Refund</li>
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item">My CRM</li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  <a href="javascript:void(0);">Tickets</a>
+                </li>
               </ol>
             </div>
           </div>
-          <!-- PAGE-HEADER END -->
+          <!-- HEADER-END -->
           <div class="row row-sm">
-            <div class="col-lg-12">
+            <div class="col-md-12 col-xl-12 col-xs-12 col-sm-12">
               <div class="card">
                 <div class="card-body">
-                  <div class="row">
-                    <div class="col-sm-12 col-md-12 col-xl-6">
-                      <div class="input-group">
-                        <div id="datePickerStyle1" class="input-group date" data-date-format="mm-dd-yyyy">
-                          <span class="input-group-addon input-group-text bg-primary-transparent"><i class="fe fe-calendar text-primary-dark"></i></span>
-                          <input class="form-control" id="bootstrapDatePicker1" type="text"/>
-                          <button class="btn btn-primary text-white" type="button"><i class="fa fa-search"></i></button>
+                  <div>
+                    <div class="d-flex border p-3 br-5">
+                      <div class="p-sm-4 p-2">
+                        <div class="tabs-menu4">
+                          <!-- Tabs -->
+                          <nav class="nav d-sm-flex d-block">
+                            <a class="nav-link border border-bottom-0 br-sm-5" data-bs-toggle="tab" href="#tab25">
+                              <span class="badge rounded-pill bg-dark">11</span> Total Open
+                            </a>
+                            <a class="nav-link border border-bottom-0 br-sm-5" data-bs-toggle="tab" href="#tab26">
+                              <span class="badge rounded-pill bg-dark">3</span>Delivery
+                            </a>
+                            <a class="nav-link border border-bottom-0 br-sm-5" data-bs-toggle="tab" href="#tab27">
+                              <span class="badge rounded-pill bg-dark">1</span>Purchasing
+                            </a>
+                            <a class="nav-link border border-bottom-0 br-sm-5" data-bs-toggle="tab" href="#tab28">
+                              <span class="badge rounded-pill bg-dark">7</span>CRM
+                            </a>
+                          </nav>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-xl-6">
-                      <div class="form-group">
-                        <form action="#" method="POST">
-                          <div class="input-group">
-                            <!--@csrf-->
-                            <input class="form-control" placeholder="Customer Phone Number" type="text">
-                            <button class="btn btn-primary text-white" type="button"><i class="fa fa-search"></i></button>
-                          </div>
-                        </form>
+                      <div class="p-sm-4 p-2 ms-auto">
+                        <div class="tabs-menu4">
+                          <!-- Tabs -->
+                          <nav class="nav d-sm-flex d-block">
+                            <a class="nav-link border border-bottom-0 br-sm-5 active" data-bs-toggle="tab" href="#tab23">
+                              OPEN
+                            </a>
+                            <a class="nav-link border border-bottom-0 br-sm-5" data-bs-toggle="tab" href="#tab24">
+                              CLOSE
+                            </a>
+                          </nav>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- FILTER END -->
-          <div class="row text-center">
-            <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
-              <div class="card overflow-hidden">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h6 class="mb-2 fw-semibold ht-xl-60">Total Customers</h6>
-                      <span class="btn btn-outline-secondary btn-sm">9</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
-              <div class="card overflow-hidden">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h6 class="mb-2 fw-semibold ht-xl-60">Customers Without Tickets</h6>
-                      <span class="btn btn-outline-success btn-sm">5</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
-              <div class="card overflow-hidden">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h6 class="mb-2 fw-semibold ht-xl-60">Total Orders</h6>
-                      <span class="btn btn-outline-primary btn-sm">28</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
-              <div class="card overflow-hidden">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h6 class="mb-2 fw-semibold ht-xl-60">Total Refund</h6>
-                      <span class="btn btn-outline-danger btn-sm">&#2547;70,275</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
-              <div class="card overflow-hidden">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h6 class="mb-2 fw-semibold ht-xl-60">Refund Without Tickets</h6>
-                      <span class="btn btn-outline-danger btn-sm">&#2547;15,561</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-md-4 col-xl-2">
-              <div class="card overflow-hidden">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h6 class="mb-2 fw-semibold ht-xl-60">Refund Amount</h6>
-                      <span class="btn btn-outline-danger btn-sm">&#2547;70,275</span>
                     </div>
                   </div>
                 </div>
@@ -1032,110 +974,154 @@
           </div>
           <!-- ROW-1 END-->
           <div class="row row-sm">
-            <div class="col-lg-12">
+            <div class="col-md-12">
               <div class="card">
                 <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table table-bordered table-striped text-nowrap border-bottom w-100" id="responsive-datatable-mod">
-                      <thead>
-                      <tr>
-                        <th class="wd-10p border-bottom-0">Sl.</th>
-                        <th class="wd-10p border-bottom-0">Customer Name</th>
-                        <th class="wd-10p border-bottom-0">Schedule</th>
-                        <th class="wd-10p border-bottom-0">Refund Note</th>
-                        <th class="wd-10p border-bottom-0">Tickets</th>
-                        <th class="wd-10p border-bottom-0">Customer Phone</th>
-                        <th class="wd-10p border-bottom-0">Balance</th>
-                        <th class="wd-10p border-bottom-0">CRM Manager</th>
-                        <th class="wd-10p border-bottom-0">Orders</th>
-                        <th class="wd-10p border-bottom-0">Refund Amount</th>
-                        <th class="wd-10p border-bottom-0">Action</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>Saiful</td>
-                        <td>5 March - Sunday</td>
-                        <td>
-                          <p>Bkash 017XXXXXXXX</p>
-                          <a class="btn btn-sm btn-secondary-gradient" href="#">Delete</a>
-                        </td>
-                        <td>
-                          <a class="btn btn-outline-primary btn-sm" href="#">28</a>
-                        </td>
-                        <td>018XXXXXXXX</td>
-                        <td>
-                          <span class="badge bg-primary-gradient">&#2547;1248</span>
-                        </td>
-                        <td>Md Salauddin</td>
-                        <td>
-                          <button type="button" class="btn-sm btn btn-warning my-1">
-                            <span class="badge badge-sm rounded-pill bg-white">&#2547;1272</span>&nbsp;
-                            <span>WR1942</span>
-                          </button>
-                          <button type="button" class="btn-sm btn btn-warning my-1">
-                            <span class="badge badge-sm rounded-pill bg-white">&#2547;1232</span>&nbsp;
-                            <span>WR194W</span>
-                          </button>
-                        </td>
-                        <td>
-                          <span class="badge bg-danger-gradient">&#2547;2504</span>
-                        </td>
-                        <td>
-                          <div class="d-flex">
-                            <a class="btn btn-sm btn-success-gradient border me-2" href="#"><i class="fe fe-info"></i></a>
-                            <a class="btn btn-sm btn-secondary-gradient border me-2" href="#"><i class="fe fe-edit-2"></i></a>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Nafha Islam</td>
-                        <td>12 March - Sunday</td>
-                        <td>
-                          <a class="btn btn-sm btn-warning-gradient" href="#">Add Note</a>
-                        </td>
-                        <td>
-                          <a class="text-secondary" href="#">View Tickets</a>
-                        </td>
-                        <td>018XXXXXXXX</td>
-                        <td>
-                          <span class="badge bg-primary-gradient">&#2547;0</span>
-                        </td>
-                        <td>Md Salauddin</td>
-                        <td>
-                          <button type="button" class="btn-sm btn btn-warning my-1">
-                            <span class="badge badge-sm rounded-pill bg-white">&#2547;1344</span>&nbsp;
-                            <span>WRCZRF</span>
-                          </button>
-                          <button type="button" class="btn-sm btn btn-warning my-1">
-                            <span class="badge badge-sm rounded-pill bg-white">&#2547;1730</span>&nbsp;
-                            <span>WRCRIW</span>
-                          </button>
-                          <button type="button" class="btn-sm btn btn-warning my-1">
-                            <span class="badge badge-sm rounded-pill bg-white">&#2547;3456</span>&nbsp;
-                            <span>WRCR36</span>
-                          </button>
-                        </td>
-                        <td>
-                          <span class="badge bg-danger-gradient">&#2547;6530</span>
-                        </td>
-                        <td>
-                          <div class="d-flex">
-                            <a class="btn btn-sm btn-success-gradient border me-2" href="#"><i class="fe fe-info"></i></a>
-                            <a class="btn btn-sm btn-secondary-gradient border me-2" href="#"><i class="fe fe-edit-2"></i></a>
-                          </div>
-                        </td>
-                      </tr>
-                      </tbody>
-                    </table>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="tab23">
+                      <div class="table-responsive">
+                        <table id="responsive-datatable" class="table table-bordered table-striped text-nowrap border-bottom w-100">
+                          <thead>
+                          <tr>
+                            <th class="wd-10p border-bottom-0">Sl.</th>
+                            <th class="wd-10p border-bottom-0">Date</th>
+                            <th class="wd-10p border-bottom-0">Ticket Id</th>
+                            <th class="wd-10p border-bottom-0">Order Code</th>
+                            <th class="wd-10p border-bottom-0">Category</th>
+                            <th class="wd-10p border-bottom-0">Message</th>
+                            <th class="wd-10p border-bottom-0">Username</th>
+                            <th class="wd-10p border-bottom-0">Phone</th>
+                            <th class="wd-10p border-bottom-0">Department</th>
+                            <th class="wd-10p border-bottom-0">Status</th>
+                            <th class="wd-10p border-bottom-0">Manager</th>
+                            <th class="wd-10p border-bottom-0">Chat</th>
+                            <th class="wd-10p border-bottom-0">Action</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>18th Feb, 05:29 PM</td>
+                            <td>13082</td>
+                            <td>WRCHT5</td>
+                            <td>
+                              <span class="border border-1 border-danger px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent">DELIVERY</span>
+                            </td>
+                            <td>delivery kobe pabo?</td>
+                            <td>Md Rana</td>
+                            <td>01677355336</td>
+                            <td>Delivery</td>
+                            <td>
+                              <span class="badge badge-sm bg-secondary-gradient">Open</span>
+                            </td>
+                            <td>Md. Salauddin</td>
+                            <td></td>
+                            <td>
+                              <div class="d-flex">
+                                <a class="btn btn-sm btn-success-gradient border me-2" href="#"><i class="fa fa-info"></i><!--Details--></a>
+                                <a class="btn btn-sm btn-secondary-gradient border me-2" href="#"><i class="fa fa-edit"></i><!--Edit--></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>22nd Feb, 03:51 PM</td>
+                            <td>13104</td>
+                            <td>WR194U</td>
+                            <td>
+                              <span class="border border-1 border-danger px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent">RETURN PRODUCT</span>
+                            </td>
+                            <td>WR194W. WR1942. Onek Din Hoya</td>
+                            <td>Saiful</td>
+                            <td>01710843319</td>
+                            <td>Purchasing</td>
+                            <td>
+                              <span class="badge badge-sm bg-secondary-gradient">Open</span>
+                            </td>
+                            <td>Md. Salauddin</td>
+                            <td></td>
+                            <td>
+                              <div class="d-flex">
+                                <a class="btn btn-sm btn-success-gradient border me-2" href="#"><i class="fa fa-info"></i><!--Details--></a>
+                                <a class="btn btn-sm btn-secondary-gradient border me-2" href="#"><i class="fa fa-edit"></i><!--Edit--></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>27th Feb, 04:28 PM</td>
+                            <td>13139</td>
+                            <td>WRCR4Y</td>
+                            <td>
+                              <span class="border border-1 border-danger px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent">REFUND</span>
+                            </td>
+                            <td>WRCR4Y, WRCRHH, WRCRHL Orde</td>
+                            <td>Nafia Mashtaha Nobo</td>
+                            <td>01913876707</td>
+                            <td>CRM</td>
+                            <td>
+                              <span class="badge badge-sm bg-secondary-gradient">Open</span>
+                            </td>
+                            <td>Md. Salauddin</td>
+                            <td></td>
+                            <td>
+                              <div class="d-flex">
+                                <a class="btn btn-sm btn-success-gradient border me-2" href="#"><i class="fa fa-info"></i><!--Details--></a>
+                                <a class="btn btn-sm btn-secondary-gradient border me-2" href="#"><i class="fa fa-edit"></i><!--Edit--></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>9th Mar, 11:30 AM</td>
+                            <td>13282</td>
+                            <td>WRCHC1</td>
+                            <td>
+                              <span class="border border-1 border-danger px-1 fw-bold rounded-1 fs-10 text-danger bg-danger-transparent">DELIVERY</span>
+                            </td>
+                            <td>delivery Update ki?</td>
+                            <td>Md Rana</td>
+                            <td>01677355336</td>
+                            <td>Delivery</td>
+                            <td>
+                              <span class="badge badge-sm bg-secondary-gradient">Open</span>
+                            </td>
+                            <td>Md. Salauddin</td>
+                            <td>
+                              <span class="badge badge-sm bg-yellow-darkest">Message</span>
+                            </td>
+                            <td>
+                              <div class="d-flex">
+                                <a class="btn btn-sm btn-success-gradient border me-2" href="#"><i class="fa fa-info"></i><!--Details--></a>
+                                <a class="btn btn-sm btn-secondary-gradient border me-2" href="#"><i class="fa fa-edit"></i><!--Edit--></a>
+                              </div>
+                            </td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="tab24">
+                      <p>Close</p>
+                    </div>
+                    <div class="tab-pane" id="tab25">
+                      <p>a</p>
+                    </div>
+                    <div class="tab-pane" id="tab26">
+                      <p>b</p>
+                    </div>
+                    <div class="tab-pane" id="tab27">
+                      <p>c</p>
+                    </div>
+                    <div class="tab-pane" id="tab28">
+                      <p>d</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- ORDERS LIST END -->
+          <!-- DATA END -->
         </div>
       </div>
     </div>
@@ -1660,7 +1646,7 @@
 <script src="assets/js/custom.js"></script>
 
 <!-- SWITCHER JS -->
-<script src="assets/switcher/js/switcher.js"></script>
+<!--<script src="assets/switcher/js/switcher.js"></script>-->
 
 </body>
 </html>

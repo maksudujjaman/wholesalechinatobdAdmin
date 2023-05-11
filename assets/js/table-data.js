@@ -3,6 +3,7 @@
     $(function (e) {
         $("#basic-datatable").DataTable({ language: { searchPlaceholder: "Search...", sSearch: "" } }),
             $("#responsive-datatable").DataTable({ responsive: !0, language: { searchPlaceholder: "Search...", sSearch: "" } }),
+            $("#responsive-datatable-two").DataTable({ responsive: !0, language: { searchPlaceholder: "Search...", sSearch: "" } }),
             $("#responsive-datatable-mod").DataTable({ responsive: !0, searching: false }),
             $("#responsive-datatable-mod-two").DataTable({ responsive: !0, searching: false }),
             (a = $("#file-datatable").DataTable({ buttons: ["copy", "excel", "pdf", "colvis"], responsive: !0, language: { searchPlaceholder: "Search...", sSearch: "" } }))
